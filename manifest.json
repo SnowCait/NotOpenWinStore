@@ -1,0 +1,12 @@
+﻿{
+	"manifest_version": 2,
+	"name": "Not open Windows Store",
+	"version": "1.0.0",
+	"content_scripts": [
+		{
+			"matches": ["http://apps.microsoft.com/windows/*"],
+			"js": ["content.js"],
+			"run_at": "document_end"
+		}
+	]
+}
